@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 #intro-name {
@@ -29,12 +29,21 @@
     height: 500px;
 }
 
-#art-preview {
+#art-preview{
+    position: absolute;
+    left: 10%;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 5px;
+    height: 400px;
 }
 
 .img-preview {
-    width: 33%vw;
-    height: 300px;
+    width: 500px;
+    height: 190px;
+    /* This is to maintain image quality even when resized */
+    object-fit: cover;
+    border-radius: 10px;
 }
