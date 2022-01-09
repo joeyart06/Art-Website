@@ -30,8 +30,6 @@
 }
 
 #art-preview{
-    position: absolute;
-    left: 10%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -41,6 +39,7 @@
 }
 
 .img-preview {
+    display: block;
     width: 500px;
     height: 190px;
     /* This is to maintain image quality even when resized */
