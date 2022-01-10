@@ -50,6 +50,7 @@
 
 .img-preview:hover {
     widows: calc(30vw + 2vw);
-    transition: width 300ms, height 300ms, transform 2s;
-    filter: blur(0.1vw), grayscale(10%);
+    transition: width 300ms, height 300ms, grayscale 1s, blur 100ms;
+    filter: blur(10px);
+    filter: grayscale(50%);
 }
