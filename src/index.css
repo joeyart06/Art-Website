@@ -53,5 +53,5 @@
     height: calc(33vw + 30px);
     transition: width 300ms, height 300ms, transform 2s;
     /* This one no worky */
-    filter: blur(100%);
+    filter: blur(7.5px);
 }
