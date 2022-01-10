@@ -36,20 +36,21 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     column-gap: 1vw;
-    row-gap: 1vh;
+    row-gap: 2vh;
     height: 35vh;
 }
 
 .img-preview {
     width: 30vw;
-    height: 33vw;
+    height: 33vh;
     /* This is to maintain image quality even when resized */
     object-fit: cover;
     border-radius: 1.5vw;
 }
 
 .img-preview:hover {
-    widows: calc(30vw + 2vw);
+    width: 30.5vw;
+    height: 33.5vh;
     transition: width 300ms, height 300ms, grayscale 1s, blur 100ms;
     filter: blur(5px) grayscale(50%);
 }
