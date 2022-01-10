@@ -47,3 +47,11 @@
     object-fit: cover;
     border-radius: 1.5vw;
 }
+
+.img-preview:hover {
+    widows: calc(30vw + 30px);
+    height: calc(33vw + 30px);
+    transition: width 300ms, height 300ms, transform 2s;
+    /* This one no worky */
+    filter: blur(100%);
+}
