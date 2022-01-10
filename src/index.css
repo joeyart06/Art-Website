@@ -49,8 +49,31 @@
 }
 
 .img-preview:hover {
-    width: 30.5vw;
-    height: 33.5vh;
-    transition: width 300ms, height 300ms, grayscale 1s, blur 100ms;
+    /* Blurs the image and adds grayscale */
+    transition: grayscale 1s, blur 100ms;
     filter: blur(5px) grayscale(50%);
+}
+
+#img1 {
+
+}
+
+#img2 {
+    
+}
+
+#img3 {
+    
+}
+
+#img4 {
+    
+}
+
+#img5 {
+    
+}
+
+#img6 {
+    
 }
