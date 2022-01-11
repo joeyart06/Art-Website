@@ -30,7 +30,7 @@
     height: 90vh;
 }
 
-#art-preview{
+.art-preview{
     margin: 1.5vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,29 +51,22 @@
 .img-preview:hover {
     /* Blurs the image and adds grayscale */
     transition: grayscale 1s, blur 100ms;
-    filter: blur(5px) grayscale(50%);
-}
+    filter: blur(5px) grayscale(65%);
+}   
 
-#img1 {
+.img-txt {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    top: -50%;
+    user-select:none;
+    /* visibility:hidden */
+  }
 
-}
-
-#img2 {
-    
-}
-
-#img3 {
-    
-}
-
-#img4 {
-    
-}
-
-#img5 {
-    
-}
-
-#img6 {
-    
-}
+/* .img-tx:hover {
+    visibility: visible;
+} */
