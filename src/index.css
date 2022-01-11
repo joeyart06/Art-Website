@@ -64,9 +64,9 @@
     text-align: center;
     top: -50%;
     user-select:none;
-    /* visibility:hidden */
+    visibility:hidden
   }
 
-/* .img-tx:hover {
+.img-txt:hover {
     visibility: visible;
-} */
+}
