@@ -36,7 +36,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     column-gap: 1vw;
-    row-gap: 2vh;
+    row-gap: 10px;
     height: 35vh;
 }
 
@@ -61,12 +61,9 @@
     color: white;
     background-color: transparent;
     position: relative;
+    pointer-events: none;
     text-align: center;
     top: -50%;
     user-select:none;
     overflow:hidden;
   }
-
-.img-txt:hover {
-    visibility: visible;
-}
