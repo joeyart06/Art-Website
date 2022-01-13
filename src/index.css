@@ -16,11 +16,11 @@
 
 #intro-name {
     font-family: "Roboto", sans-serif;
-    font-size: 5.9vw;
+    font-size: 6vw;
 }
 
 #intro-descriptor{
-    font-size: 2vw;
+    font-size: 2.75vw;
 }
 
 #intro-portrait {
@@ -30,13 +30,16 @@
     height: 90vh;
 }
 
+#social {
+    font-size: 1.5vw;
+}
+
 .art-preview{
-    margin: 1.5vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     column-gap: 1vw;
-    row-gap: 10px;
+    row-gap: 1vh;
     height: 35vh;
 }
 
