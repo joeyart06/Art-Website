@@ -1,5 +1,6 @@
 * {
-    background-color: #FFFFF0;
+    user-select: none;
+    background-color: #FFFFFF;
 }
 
 #intro-text {
@@ -8,6 +9,7 @@
 }
 
 #intro {
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -16,11 +18,11 @@
 
 #intro-name {
     font-family: "Roboto", sans-serif;
-    font-size: 5.9vw;
+    font-size: 6vw;
 }
 
 #intro-descriptor{
-    font-size: 2vw;
+    font-size: 2.75vw;
 }
 
 #intro-portrait {
@@ -30,13 +32,16 @@
     height: 90vh;
 }
 
+#social {
+    font-size: 1.5vw;
+}
+
 .art-preview{
-    margin: 1.5vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     column-gap: 1vw;
-    row-gap: 2vh;
+    row-gap: 1vh;
     height: 35vh;
 }
 
@@ -61,12 +66,21 @@
     color: white;
     background-color: transparent;
     position: relative;
+    pointer-events: none;
     text-align: center;
     top: -50%;
     user-select:none;
     overflow:hidden;
   }
 
-.img-txt:hover {
-    visibility: visible;
-}
+  .landscape {
+    user-select: none;
+    /* There's nothing here, for now . . . 
+    WTR FSR1
+    WTR FSR4
+    WTR FSR7
+    WTR FSR12
+
+      */
+      
+  }
