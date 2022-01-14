@@ -1,4 +1,5 @@
 * {
+    user-select: none;
     background-color: #FFFFFF;
 }
 
@@ -8,6 +9,7 @@
 }
 
 #intro {
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -69,4 +71,16 @@
     top: -50%;
     user-select:none;
     overflow:hidden;
+  }
+
+  .landscape {
+    user-select: none;
+    /* There's nothing here, for now . . . 
+    WTR FSR1
+    WTR FSR4
+    WTR FSR7
+    WTR FSR12
+
+      */
+      
   }
