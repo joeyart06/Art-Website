@@ -84,7 +84,8 @@
     top: -50%;
     user-select: none;
     overflow: hidden;
-    display: none;
+    /* display: none;   */
+    /* This is part of the issue with the grid, something here is making it have the weird spacing between rows*/
 }
 
 .landscape {
@@ -100,10 +101,6 @@
 }
 
 .section {
-    display: block;
-}
-
-.img-piece {
-    width: 50px;
-    height: 50px;
+    display: none;
+    /* Currently, this is showing up in the grid, so it needs to be disabled untill the grid is fixed */
 }
