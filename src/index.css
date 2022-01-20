@@ -75,6 +75,7 @@
 .img-txt {
     font-family: "Inter", sans-serif;
     font-weight: bold;
+    height: 0px;
     font-size: 1.5em;
     color: white;
     background-color: transparent;
@@ -83,8 +84,10 @@
     text-align: center;
     top: -50%;
     user-select: none;
-    overflow: hidden;
-    /* display: none;   */
+    overflow: visible;
+    padding: none;
+    border: none;
+    margin: none;
     /* This is part of the issue with the grid, something here is making it have the weird spacing between rows*/
 }
 
