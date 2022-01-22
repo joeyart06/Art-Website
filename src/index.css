@@ -49,13 +49,10 @@
     font-size: 1.5vw;
 }
 
-.art-preview{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    column-gap: 1vw;
-    row-gap: 1vh;
-    height: 35vh;
+.art-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .img-preview {
@@ -104,6 +101,13 @@
 }
 
 .section {
-    display: none;
+    display: inline-block;
     /* Currently, this is showing up in the grid, so it needs to be disabled untill the grid is fixed */
+    border-radius: 1px solid black;
+}
+
+.img-piece {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
