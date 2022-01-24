@@ -52,11 +52,11 @@
 .art-preview {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .img-preview {
-    width: 30vw;
+    width: 32vw;
     height: 33vh;
     /* This is to maintain image quality even when resized */
     object-fit: cover;
@@ -80,11 +80,6 @@
     pointer-events: none;
     text-align: center;
     top: -50%;
-    user-select: none;
-    overflow: visible;
-    padding: none;
-    border: none;
-    margin: none;
     /* This is part of the issue with the grid, something here is making it have the weird spacing between rows*/
 }
 
@@ -101,6 +96,7 @@
 }
 
 .section {
+    font-family: "Inter", sans-serif;
     display: inline-block;
     /* Currently, this is showing up in the grid, so it needs to be disabled untill the grid is fixed */
     border-radius: 1px solid black;
