@@ -1,6 +1,10 @@
 * {
     user-select: none;
     background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: none;
 }
 
 #intro-text {
@@ -49,6 +53,10 @@
     font-size: 1.5vw;
 }
 
+#line-break {
+    width: 100vw;
+}
+
 .art-preview {
     display: flex;
     flex-wrap: wrap;
@@ -58,7 +66,7 @@
 .img-preview {
     width: 32vw;
     height: 33vh;
-    /* This is to maintain image quality even when resized */
+    padding-top: 1vh;
     object-fit: cover;
     border-radius: 1.5vw;
 }
