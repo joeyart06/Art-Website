@@ -60,13 +60,13 @@
 .art-preview {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 1.5vh;
     justify-content: space-around;
 }
 
 .img-preview {
     width: 32vw;
     height: 33vh;
-    padding-top: 1vh;
     object-fit: cover;
     border-radius: 1.5vw;
 }
@@ -115,3 +115,5 @@
     height: 100px;
     object-fit: cover;
 }
+
+/* Penis boi */
