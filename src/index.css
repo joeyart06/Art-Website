@@ -5,6 +5,7 @@
     margin: 0;
     border: 0;
     box-sizing: none;
+    scroll-behavior: smooth;
 }
 
 #intro-text {
@@ -50,6 +51,7 @@
 }
 
 #social {
+    padding-top: 0.5vh;
     font-size: 1.5vw;
 }
 
@@ -69,7 +71,7 @@
     width: 32vw;
     height: 33vh;
     object-fit: cover;
-    border-radius: 1.5vw;
+    border-radius: 1vw;
 }
 
 .img-preview:hover {
@@ -82,41 +84,36 @@
     font-family: "Inter", sans-serif;
     font-weight: bold;
     height: 0px;
-    font-size: 1.5em;
+    font-size: 1.75vw;
     color: white;
     background-color: transparent;
     position: relative;
     pointer-events: none;
     text-align: center;
     top: -50%;
-    /* This is part of the issue with the grid, something here is making it have the weird spacing between rows*/
-}
-
-.landscape {
-    user-select: none;
-    /* There's nothing here, for now . . . 
-    WTR FSR1
-    WTR FSR4
-    WTR FSR7
-    WTR FSR12
-
-      */
-      
 }
 
 .section {
     font-family: "Inter", sans-serif;
     display: inline-block;
-    /* Currently, this is showing up in the grid, so it needs to be disabled untill the grid is fixed */
-    border-radius: 1px solid black;
+    padding: 0.75vw;
 }
 
-.img-piece {
-    width: 100px;
-    height: 100px;
+.landscape {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5vh;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.img-piece-landscape {
+    width: 24vw;
+    height: 30vh;
     object-fit: cover;
 }
 
-.section-title {
-    padding-left: 0.75vw;
+.img-piece-landscape-collection{
+    left: 1vw;
+    z-index: 2;
 }
