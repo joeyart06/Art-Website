@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/website/icons8-art-64.png" type="image/x-icon">
+    <!--CSS reset-->
+    <link rel="stylesheet" href="reset.css">
+    <!-- Actual CSS style -->
+    <link id="stylesheet" rel="stylesheet" href="style.css">
+    <!-- Raleway and Inter fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Joey's Website</title>
+</head>
+<body>
+    <!-- Interactive JavaScript -->
+    <script src="index.js"></script>
+    <nav>
+        <a href="https://www.instagram.com/joey_art06/?utm_medium=copy_link" target="_blank" class="contact-urls">
+            <img src="assets/website/icons8-instagram-64.png" alt="Check out my Instagram" class="contact">
+        </a>
+        <!-- CHANGE THE LINE BELOW PLS -->
+        <a href="mailto:tominekan@outlook.com" target="_blank" class="contact-urls">
+            <img src="assets/website/icons8-email-open-64.png" alt="Send me an Email" class="contact">
+        </a>
+    </nav>
+    <div class="site">
+    <div id="content">
+        <div class="intro snap-point">
+            <div class="intro-text">
+                <h1 class="intro-main">Hi, I'm Joey</h1>
+                <br>
+                <h2 class="intro-descriptor">Art Master, Handsome Boi, Overall G</h2>
+                <br><br>
+                <p class="intro-paragraph">Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            <img src="assets/artwork/Originals/House_Picture.jpeg" alt="Picture of a house" class="intro-img">
+        </div>
+
+        <div class="category snap-point">
+            <div class="category-text">
+                <h1 class="category-main">Landscape</h1>
+                <br>
+                <p class="category-tidbit">Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            <div class="category-images">
+                <img
+                    src="assets/artwork/Landscapes/Aloha.png"
+                    alt="Aloha" 
+                    class="category-item"
+                    onclick="loadImage(
+                        'assets/artwork/Landscapes/Aloha.png',
+                        'Aloha'
+                    )">
+               <img
+                    src="assets/artwork/Landscapes/El_Capitan.png"
+                    alt="El Capitan" 
+                    class="category-item"
+                    onclick="loadImage(
+                        'assets/artwork/Landscapes/El_Capitan.png',
+                        'El Capitan'
+                    )">
+                <img
+                    src="assets/artwork/Landscapes/Fjord.png"
+                    alt="Fjord" 
+                    class="category-item"
+                    onclick="loadImage(
+                        'assets/artwork/Landscapes/Fjord.png',
+                        'Fjord'
+                    )">
+            </div>
+        </div>
+
+        <div class="category snap-point">
+            <div class="category-text   ">
+                <h1 class="category-main">Originals</h1>
+                <br>
+                <p class="category-tidbit">Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            <div class="category-images">
+                <img 
+                    src="assets/artwork/Originals/Heavy_Burdens_Final.png" 
+                    alt="Heavy Burdens" 
+                    class="category-item"
+                    onclick="loadImage(
+                        'assets/artwork/Originals/Heavy_Burdens_Final.png',
+                        'Heavy Burdens',
+                    )">
+                <img
+                    src="assets/artwork/Originals/Inevitable_Success_.JPEG"
+                    alt="Inevitable Success"
+                    class="category-item"
+                    onclick="loadImage(
+                        'assets/artwork/Originals/Inevitable_Success_.JPEG',
+                        'Inevitable Success'
+                    )">
+                <img
+                    src="assets/artwork/Originals/Kung_Fu_Panda.png"
+                    alt="Kung Fu Panda"
+                    class="category-item"
+                    onclick="loadImage(
+                        'assets/artwork/Originals/Kung_Fu_Panda.png',
+                        'Kung Fu Panda'
+                    )">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content" id="modal-content">
+            <img src="" alt="" id="piece">
+            <h1 class="piece-title" id="piece-title">Dissector of Hopes</h1>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

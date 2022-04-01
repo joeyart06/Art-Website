@@ -1,0 +1,84 @@
+/* GLOBALS */
+* {
+    background-color: #F8F9DC;
+    --screen-space: calc(98vw - 64px);
+}
+
+/* NAVIGATION BAR STYLING */
+nav {
+    position: fixed;
+    bottom: 0;
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+img {
+    background-color: black;
+}
+
+.contact-urls {
+    background-color: black;
+}
+
+/* GLUESTICK CODE */
+.category-item {
+    width: 100px;
+    height: 100px;
+}
+
+/* INTRO STYLING */
+.intro-text {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.intro-main {
+    font-family: "Raleway", "Inter", sans-serif;
+    font-size: 7.5vh;
+}
+.intro-descriptor {
+    font-family: "Inter", sans-serif;
+    font-size: 6vw;
+}
+
+.intro-paragraph {
+    font-family: "Inter", sans-serif;
+    font-size: 3.75vw;
+}
+
+.intro-descriptor, .intro-paragraph {
+    font-family: "Inter", sans-serif;
+}
+.intro-img {
+    width: 100%;
+}
+
+/* STYLE CATEGORY */
+
+.category-item {
+    width: 100vw;
+    height: 50vh;
+    padding-bottom: 30px;
+    background: none;
+}
+
+.category-text {
+    padding: 30px;
+    padding-bottom: 30px;
+}
+
+.category-main {
+    font-family: "Raleway", "Inter", sans-serif;
+    font-size: 7.5vh;
+}
+
+.category-tidbit {
+    font-family: "Inter", sans-serif;
+    font-size: 3.75vw;
+}
