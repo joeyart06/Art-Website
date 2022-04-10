@@ -26,21 +26,24 @@ function fitDimensions(oldWidth, oldHeight) { // Fits the image to the screen
     
     if (oldWidth > oldHeight) { // If the picture is landscape
         let ratio = windowWidth/oldWidth;
-        alert(`Landscape, Ratio: ${ratio}, sizing_factor: ${sizing_factor}, ratio_factor = ${ratio * sizing_factor}`);
         return {
             width: (oldWidth * (ratio * sizing_factor)),
             height: (oldHeight * (ratio * sizing_factor))
         };
     } else if (oldWidth < oldHeight) { // If the picture is portrait
         let ratio = windowHeight/oldHeight;
-        alert(`Portrait, Ratio: ${ratio}, sizing_factor: ${sizing_factor}, ratio_factor = ${ratio * sizing_factor}`);
+        return {
+            width: (oldWidth * (ratio * sizing_factor)),
+            height: (oldHeight * (ratio * sizing_factor))
+        };
+    }else if (oldWidth = oldHeight) { // If the picture is square
+        let ratio = windowHeight/oldHeight;
         return {
             width: (oldWidth * (ratio * sizing_factor)),
             height: (oldHeight * (ratio * sizing_factor))
         };
     } else {
         let ratio = (windowHeight/oldHeight) * (windowWidth/oldWidth);
-        alert(`Square, Ratio: ${ratio}, sizing_factor: ${sizing_factor}, ratio_factor = ${ratio * sizing_factor}`);
         return {
             width: (oldWidth * (ratio * sizing_factor)),
             height: (oldHeight * (ratio * sizing_factor))
@@ -68,13 +71,14 @@ function displayImage(pathToImage, name) { // Displays image on screen
     modal.style.justifyContent = "center"
     modal.style.flexDirection = "column"
     modal.style.alignItems = "center"
-    // site.style.filter = "blur(10px)"
-
+    document.body.classList.add("scrolling-stop");
+    
     // Handle closing the dialog
     window.onclick = function(event) {
         // The modal div itself, not containing the elements inside it
         if (event.target == modal) {
           modal.style.display = "none";
+          document.body.classList.remove("scrolling-stop");
         }
       }
 }

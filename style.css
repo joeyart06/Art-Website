@@ -4,17 +4,19 @@
     --bgcolor: #fffff0;
 }
 * {
-    --screen-space: calc(98vw - 64px);
+    --screen-space: calc(97vw - 64px);
     overscroll-behavior: none;
 }
 
 .site {
     background-color: #fffff0;
+    padding-left: 5px;
 }
 
 /* SCROLL SNAP SETTINGS */
 #content {
     scroll-snap-type: y mandatory;
+    padding-left: 64px;
 }
 
 .snap-point {
@@ -34,11 +36,6 @@ nav {
     align-content: space-around;
 }
 
-#content {
-    /* makes sure things don't overlap */
-    padding-left: 64px; 
-}
-
 .contact-urls {
     border-left: 3px solid var(--navcolor);
     background-color: var(--navcolor);
@@ -56,7 +53,8 @@ nav {
     justify-content: flex-end;
     align-items: center;
     flex: auto;
-    padding-bottom: 100px;
+    padding: 10px;
+    padding-bottom: 40px;
 }
 
 .intro-text {
@@ -89,12 +87,11 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .category-text {
     text-align: center;
-    padding-bottom: 50px;
 }
 
 .category-tidbit {
@@ -108,20 +105,36 @@ nav {
 
 
 .category-item {
+    transition: filter 250ms ease-in;
     height: 50vh;
-    width: calc(95vw/3);
-    overflow: cover;
+    padding: 5px;
+    width: calc(90vw/3);
+    overflow: hidden;
 }
 
 .category-item:hover {
-    filter: grayscale(60%);
+    filter: grayscale(60%) blur(1px) drop-shadow(0px 0px 10px #000000);
+}
+
+.category-item-1 {
+    transition: filter 250ms ease-in;
+    height: 50vh;
+    width: calc(90vw/3);
+    padding-top: 9px;
+    overflow: hidden;
+}
+
+.category-item-1:hover {
+    filter: grayscale(60%) blur(1px) drop-shadow(0px 0px 10px #000000);
 }
 
 .category-images {
     display: flex;
+    padding: 20px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
 /* MODAL STYLING */
@@ -135,14 +148,16 @@ nav {
     top: 0;
     user-select: none;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.65);
+    background-color: rgba(0,0,0,0.85);
     display: none;
 }
 
 .piece-title {
     text-align: center;
+    /* This is a good way to get it in a consisten spot relative to the image, now yuo
+    just have to get the text to be in the middle of the image consistently */
     font-family: "Inter", sans-serif;
+    color: #fffff0;
     font-size: 3vw;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -157,3 +172,7 @@ nav {
     background: none;
 }
 
+.scrolling-stop {
+    height: 100%;
+    overflow: hidden;
+}
