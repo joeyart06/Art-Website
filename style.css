@@ -53,11 +53,11 @@ nav {
     justify-content: flex-end;
     align-items: center;
     flex: auto;
-    padding: 10px;
     padding-bottom: 40px;
 }
 
 .intro-text {
+    padding: 10px;
     user-select: none;
     text-align: center;
 }
