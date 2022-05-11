@@ -65,7 +65,7 @@ nav {
 .intro-descriptor, .intro-paragraph {
     font-family: "Inter", sans-serif;
 }
-
+s
 .intro-main {
     font-family: "Raleway", "Inter", sans-serif;
     font-size: 5vw;
@@ -107,7 +107,7 @@ nav {
 .category-item {
     transition: filter 250ms ease-in;
     height: 50vh;
-    padding: 5px;
+    padding: 4px;
     width: calc(90vw/3);
     overflow: hidden;
 }
