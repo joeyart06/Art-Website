@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Joey's Website</title>
-    <!-- <style media="screen" type="text/css">
+    <style media="screen" type="text/css">
         .layer1_class { position: absolute; z-index: 1; top: 100px; left: 0px; visibility: visible; }
         .layer2_class { position: absolute; z-index: 2; top: 10px; left: 10px; visibility: hidden }
       </style>
@@ -28,23 +28,16 @@
               node = document.getElementById("layer2").style.visibility='visible';
           }
         }
-      </script> -->
+      </script>
 </head>
-<body>
-<!-- <body onload="download()"> -->
-    <!-- <div id="layer1" class="layer1_class">
-        <p></p>
-        <table width="100%">
-          <tr>
-            <td align="center"><strong><em>Please wait while this page is loading...</em></strong></p></td>
-          </tr>
-        </table>
+<body onload="download()">
+    <div id="layer1" class="layer1_class">
+    </div>
+    <div id="layer2" class="layer2_class">
+        <script type="text/javascript">
+            alert('Just holding things up here.  While you are reading this, the body of the page is not loading and the onload event is being delayed');
+        </script>    
       </div>
-      <div id="layer2" class="layer2_class">
-          <script type="text/javascript">
-                  alert('Just holding things up here.  While you are reading this, the body of the page is not loading and the onload event is being delayed');
-          </script>    
-      </div> -->
     <!-- Interactive JavaScript -->
     <script src="index.js"></script>
     <nav>
@@ -52,7 +45,7 @@
             <img src="assets/website/icons8-instagram-64.png" alt="Check out my Instagram">
         </a>
         <!-- CHANGE THE LINE BELOW PLS -->
-        <a href="mailto:joeyart06@gmail.com" target="_blank" class="contact-urls">
+        <a href="mailto:joeyodonnell06@gmail.com" target="_blank" class="contact-urls">
             <img src="assets/website/icons8-email-open-64.png" alt="Send me an Email">
         </a>
     </nav>
@@ -60,32 +53,27 @@
     <div id="content">
         <div class="intro snap-point">
             <div class="intro-text">
-                <h1 class="intro-main">Hi, I'm Joey</h1>
+                <h1 class="intro-main" id="glow">Joseph O'Donnell's Art Portfolio</h1>
                 <br>
-                <h2 class="intro-descriptor">Art Master, Handsome Boi, Overall G</h2>
-                <br><br>
-                <p class="intro-paragraph">Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="intro-paragraph" id="glow">Click on the images to see them better!</p>
             </div>
-            <img src="assets/artwork/Originals/House_Picture.jpeg" alt="Picture of a house" class="intro-img">
         </div>
-
+        <div>
+            <h1 class="intro-divider">Take a look at some of my best work!</h1>
+        </div>
         <div class="category snap-point">
             <div class="category-text">
-                <h1 class="category-main">Landscape</h1>
-                <br>
-                <p class="category-tidbit">Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <h1 class="category-main" id="spacer-top">Landscape</h1>
             </div>
             <div class="category-images">
+                <img
+                    src="assets/artwork/Landscapes/House_Picture.jpeg"
+                    alt="Lake" 
+                    class="category-item"
+                    onclick="loadImage(
+                        'assets/artwork/Landscapes/House_Picture.jpeg',
+                        'Lake'
+                    )">
                 <img
                     src="assets/artwork/Landscapes/Fjord.png"
                     alt="Fjord" 
@@ -110,19 +98,22 @@
                         'assets/artwork/Landscapes/Lake.png',
                         'Lake'
                     )">
+                <img
+                src="assets/artwork/Landscapes/Aloha_2.0.png"
+                alt="Lake" 
+                class="category-item"
+                onclick="loadImage(
+                    'assets/artwork/Landscapes/Aloha_2.0.png',
+                    'Lake'
+                )">
             </div>
         </div>
-
+        
+        <hr class ="line-break">
+        
         <div class="category snap-point">
             <div class="category-text">
                 <h1 class="category-main">Originals</h1>
-                <br>
-                <p class="category-tidbit">Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             <div class="category-images">
                 <img 
@@ -152,16 +143,11 @@
             </div>
         </div>
         
+        <hr class ="line-break">
+
         <div class="category snap-point">
             <div class="category-text">
                 <h1 class="category-main">3D Models</h1>
-                <br>
-                <p class="category-tidbit">Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             <div class="category-images">
                 <img
@@ -190,16 +176,12 @@
                     )">
             </div>
         </div>
+
+        <hr class ="line-break">
+
         <div class="category snap-point">
             <div class="category-text">
                 <h1 class="category-main">Portraits</h1>
-                <br>
-                <p class="category-tidbit">Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             <div class="category-images">
                 <img
@@ -228,16 +210,12 @@
                 )">
             </div>
         </div>
+
+        <hr class ="line-break">
+
         <div class="category snap-point">
             <div class="category-text">
                 <h1 class="category-main">Sketches</h1>
-                <br>
-                <p class="category-tidbit">Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             <div class="category-images">
                 <img

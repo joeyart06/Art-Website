@@ -89,10 +89,10 @@ function loadImage(pathToImage, name) { // Decides if the browser is viewed on m
     }
 }
 
-window.onresize = () => { // when the image is resized
-    console.log(isMobile());
-    swapStyleSheet();
-}
+// window.onresize = () => { // when the image is resized
+//     console.log(isMobile());
+//     swapStyleSheet();
+// }
 
 window.onload = () => {
     console.log(isMobile());

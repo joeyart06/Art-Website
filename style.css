@@ -1,16 +1,18 @@
 /* GLOBALS */
 :root{
     --navcolor: #121619;
-    --bgcolor: #fffff0;
+    --bgcolor: #ffffff;
+    --intro-txt-bg-color: #121713;
+    --category-object-size: 90vw;
 }
 * {
+    user-select: none;
     --screen-space: calc(97vw - 64px);
     overscroll-behavior: none;
 }
 
 .site {
-    background-color: #fffff0;
-    padding-left: 5px;
+    background-color: #ffffff;
 }
 
 /* SCROLL SNAP SETTINGS */
@@ -24,6 +26,7 @@
 }
 
 /* NAVBAR STYLING */
+
 nav {
     user-select: none;
     width: var(--nav-width);
@@ -47,13 +50,23 @@ nav {
 }
 
 /* INTRO STYLING */
+
 .intro {
+    background-image: url(../Art-Website/assets/website/Winter_cabin.jpeg);
+    background-size: cover;
+    background-position-y: -25vh;
+    height: 100vh;
+    text-shadow: 0 0 10px var(--intro-txt-bg-color), 0 0 20px var(--intro-txt-bg-color), 0 0 30px var(--intro-txt-bg-color), 0 0 40px var(--intro-txt-bg-color), 
+    0 0 50px var(--intro-txt-bg-color), 0 0 60px var(--intro-txt-bg-color), 0 0 70px var(--intro-txt-bg-color);
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex: auto;
-    padding-bottom: 40px;
+}
+
+#glow {
+    color:#ffffff;
 }
 
 .intro-text {
@@ -62,7 +75,7 @@ nav {
     text-align: center;
 }
 
-.intro-descriptor, .intro-paragraph {
+.intro-paragraph {
     font-family: "Inter", sans-serif;
 }
 
@@ -71,23 +84,28 @@ nav {
     font-size: 5vw;
 }
 
-.intro-descriptor {
+.intro-divider {
+    font-family: "Inter", sans-serif;
     font-size: 2.5vw;
+    text-align: center;
+    color: #ffffff;
+    background-color: #5998c5;
+    padding: 2.5%;
+
 }
 
-.intro-img {
-    height: 100vh;
-    width: 45vw;
-    overflow: cover;
+#spacer-top {
+    padding-top: 3vh;
 }
 
 /* CATEGORIES STYLING */
+
 .category {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 1.5vh;
 }
 
 .category-text {
@@ -103,12 +121,11 @@ nav {
     font-size: 5vw;
 }
 
-
 .category-item {
     transition: filter 250ms ease-in;
     height: 50vh;
     padding: 4px;
-    width: calc(90vw/3);
+    width: calc(var(--category-object-size)/3);
     overflow: hidden;
 }
 
@@ -119,7 +136,7 @@ nav {
 .category-item-1 {
     transition: filter 250ms ease-in;
     height: 50vh;
-    width: calc(90vw/3);
+    width: calc(var(--category-object-size)/3);
     padding-top: 9px;
     overflow: hidden;
 }
@@ -137,8 +154,17 @@ nav {
     overflow: hidden;
 }
 
-/* MODAL STYLING */
+/* LINE BREAK STYLING */
 
+.line-break {
+    width: 50vw;
+    border: none;
+    background-color: #5998c5;
+    padding-bottom: 0.4vh;
+    margin-bottom: 3vh;
+}
+
+/* MODAL STYLING */
 .modal {
     position: fixed;
     width: 100%;
