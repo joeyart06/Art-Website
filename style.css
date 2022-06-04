@@ -52,7 +52,7 @@ nav {
 /* INTRO STYLING */
 
 .intro {
-    background-image: url(../Art-Website/assets/website/Winter_cabin.jpeg);
+    background-image: url(../assets/website/Winter_cabin.jpeg);
     background-size: cover;
     background-position-y: -25vh;
     height: 100vh;
