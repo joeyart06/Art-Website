@@ -13,6 +13,11 @@
 
 .site {
     background-color: #ffffff;
+    
+}
+
+.site::-webkit-scrollbar {
+    background-color: #000000;
 }
 
 /* SCROLL SNAP SETTINGS */
@@ -52,7 +57,7 @@ nav {
 /* INTRO STYLING */
 
 .intro {
-    background-image: url(../assets/website/Winter_cabin.jpeg);
+    background-image: url(../assets/website/winter_cabin.jpeg);
     background-size: cover;
     background-position-y: -25vh;
     height: 100vh;
