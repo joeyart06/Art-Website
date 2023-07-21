@@ -21,6 +21,7 @@
 }
 
 /* SCROLL SNAP SETTINGS */
+
 #content {
     scroll-snap-type: y mandatory;
     padding-left: 64px;
