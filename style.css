@@ -58,9 +58,9 @@ nav {
 /* INTRO STYLING */
 
 .intro {
-    background-image: url(../assets/website/winter_cabin.jpeg);
+    background-image: url(assets/website/winter_cabin.jpeg);
     background-size: cover;
-    background-position-y: -25vh;
+    background-position-y: -20vh;
     height: 100vh;
     text-shadow: 0 0 10px var(--intro-txt-bg-color), 0 0 20px var(--intro-txt-bg-color), 0 0 30px var(--intro-txt-bg-color), 0 0 40px var(--intro-txt-bg-color), 
     0 0 50px var(--intro-txt-bg-color), 0 0 60px var(--intro-txt-bg-color), 0 0 70px var(--intro-txt-bg-color);
@@ -69,6 +69,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex: auto;
+    z-index: -1;
 }
 
 #glow {
